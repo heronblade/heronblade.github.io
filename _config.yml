@@ -24,6 +24,8 @@ url: "http://example.com" # the base hostname & protocol for your site
 twitter_username: joshua_byler
 github_username:  heronblade
 repository: heronblade/heronblade.github.io
+sass:
+  sass_dir: _sass
 
 # Build settings
 markdown: kramdown
