@@ -23,13 +23,19 @@ nav li {
 nav li a {
     display: block;
     margin: 0 auto;
-    padding: 21px 20px
+    padding: 21px 20px;
+    color: $black;
+
+    &:hover {
+        background-color: $medgrey;
+        color: $highlight-text;
+    }
 }
 
 .nav-logo {
-    background: url('')
+    display: none;
 }
 
 .nav-items {
-    display: none;
+    //display: none;
 }
