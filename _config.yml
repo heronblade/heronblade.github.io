@@ -26,6 +26,7 @@ github_username:  heronblade
 repository: heronblade/heronblade.github.io
 sass:
   sass_dir: _sass
+#  style: compressed
 
 # Build settings
 markdown: kramdown

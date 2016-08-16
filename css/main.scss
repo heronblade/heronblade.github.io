@@ -1,11 +1,24 @@
 ---
 
 ---
+@import "../_sass/vars";
 @import "../_sass/nav";
 
-//@media (min-width: 480px) { @import "screens/min-width-480"; }
-//@media (min-width: 768px) { @import "screens/min-width-768"; }
-//@media (min-width: 1024px) { @import "screens/min-width-1024"; }
-//@media (min-width: 1280px) { @import "screens/min-width-1280"; }
 
+body {
+    margin: 0;
+}
 
+header {
+    width: 100%;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 480px) { @import "../_sass/screens/min-width-480"; }
+@media (min-width: 768px) { @import "../_sass/screens/min-width-768"; }
+@media (min-width: 1024px) { @import "../_sass/screens/min-width-1024"; }
+@media (min-width: 1280px) { @import "../_sass/screens/min-width-1280"; }
