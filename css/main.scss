@@ -25,6 +25,19 @@ section.page-wrapper {
     height: 100vh;
 }
 
+.main {
+    padding: 60px 0 0 0;
+    z-index: $zIndex-1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+canvas.particles-js-canvas-el {
+    z-index: $zIndex-0;
+}
+
 @media (min-width: 480px) { @import "../_sass/screens/min-width-480"; }
 @media (min-width: 768px) { @import "../_sass/screens/min-width-768"; }
 @media (min-width: 1024px) { @import "../_sass/screens/min-width-1024"; }
