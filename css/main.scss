@@ -3,6 +3,7 @@
 ---
 @import "../_sass/vars";
 @import "../_sass/nav";
+@import "../_sass/about";
 
 
 body {
@@ -37,6 +38,12 @@ section.page-wrapper {
 canvas.particles-js-canvas-el {
     z-index: $zIndex-0;
 }
+
+.main-section {
+    width: 80%;
+    margin: 0 auto;
+}
+
 
 @media (min-width: 480px) { @import "../_sass/screens/min-width-480"; }
 @media (min-width: 768px) { @import "../_sass/screens/min-width-768"; }
