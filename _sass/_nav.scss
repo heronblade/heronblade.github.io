@@ -5,17 +5,24 @@ nav {
     justify-content: center;
     height: $nav-height;
     @include box-shadow($bs-1);
-    background-color: $verylitegrey;
+    background-color: $bodyBackground;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    //justify-content: center;
+    justify-content: space-around;
+    //align-items: baseline;
 }
 
 nav li {
-    display: inline-block;
+    //display: inline-block;
+    display: flex;
+
+    align-self: baseline;
     height: $nav-height;
     width: auto;
 }
@@ -23,7 +30,8 @@ nav li {
 nav li a {
     display: block;
     margin: 0 auto;
-    padding: 21px 20px;
+    align-self: center;
+    //padding: 21px 20px;
     color: $black;
 
     &:hover {
