@@ -1,6 +1,6 @@
 
 //Load Particle JS
-particlesJS.load('particles-js', 'data/particles.json', function() {});
+// particlesJS.load('particles-js', 'data/particles.json', function() {});
 
 if (document.readyState != 'loading') {
 	docReady();
@@ -9,19 +9,32 @@ if (document.readyState != 'loading') {
 }
 
 function scrollTo(element, to, duration) {
-	console.log('scrolling');
-	if (duration <= 0) return;
-	var difference = to - element.scrollTop;
-	var perTick = difference / duration * 10;
 
-	console.log('diff: ' + difference);
-	console.log('perTick: ' + perTick);
+	console.log(to);
+	var codeSectionScrollTop = to.clientTop;
+	console.log('codsecscroltop ' + codeSectionScrollTop);
 
-	setTimeout(function() {
-		element.scrollTop = element.scrollTop + perTick;
-		if (element.scrollTop === to) return;
-		scrollTo(element, to, duration - 10);
-	}, 10);
+
+
+
+
+
+	// to.scrollTop = 100;
+	// console.log('scrolling');
+	// if (duration <= 0) return;
+	// var difference = to.scrollTop - element.scrollTop;
+	// var perTick = difference / duration * 10;
+	//
+	// console.log('to scrolltop: ' + to.scrollTop);
+	// console.log('elem scroll top: ' + element.scrollTop);
+	// console.log('diff: ' + difference);
+	// console.log('perTick: ' + perTick);
+	//
+	// setTimeout(function() {
+	// 	element.scrollTop = element.scrollTop + perTick;
+	// 	if (element.scrollTop === to) return;
+	// 	scrollTo(element, to, duration - 10);
+	// }, 10);
 };
 
 function docReady() {
@@ -32,7 +45,7 @@ function docReady() {
 	var codeSection = document.getElementById('code');
 	var contactSection = document.getElementById('contact');
 
-	aboutLink.addEventListener('click', function(){scrollTo(aboutLink,aboutSection, 100)}, false);
+	aboutLink.addEventListener('click', function(){scrollTo(aboutLink, aboutSection, 100)}, false);
 	codeLink.addEventListener('click', function(){scrollTo(codeLink, codeSection, 100)});
 	contactLink.addEventListener('click', function(){scrollTo(contactLink, contactSection, 100)});
 
