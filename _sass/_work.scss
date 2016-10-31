@@ -1,5 +1,7 @@
-@import "vars";
+@import 'vars';
 
 .work-logo {
-    color: $quadColor
+    img {
+        width: 50px;
+    }
 }

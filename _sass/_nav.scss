@@ -1,11 +1,11 @@
-@import "vars";
+@import 'vars';
 
 nav {
     display: flex;
     justify-content: center;
     height: $nav-height;
     @include box-shadow($bs-1);
-    background-color: $bodyBackground;
+    background-color: $body-background;
 }
 
 nav ul {
@@ -35,7 +35,7 @@ nav li a {
     color: $black;
 
     &:hover {
-        background-color: $medgrey;
+        background-color: $medium-grey;
         color: $highlight-text;
     }
 }
