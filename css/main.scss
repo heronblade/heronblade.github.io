@@ -5,6 +5,7 @@
 @import "../_sass/nav";
 @import "../_sass/about";
 @import "../_sass/work";
+@import "../_sass/contact";
 
 
 body {
@@ -24,6 +25,10 @@ header {
 
 a {
     text-decoration: none;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 section.page-wrapper {
