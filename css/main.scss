@@ -14,7 +14,7 @@ body {
     font-size: calc(1em + 1vw);
     font-weight: normal;
     color: $black;
-    //background: $bodyBackground;
+    background: #fffffa;
 }
 
 //header {
@@ -25,6 +25,7 @@ body {
 
 a {
     text-decoration: none;
+    color: $black;
 
     &:hover{
         cursor: pointer;
