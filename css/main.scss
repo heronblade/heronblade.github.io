@@ -17,11 +17,11 @@ body {
     //background: $bodyBackground;
 }
 
-header {
-    width: 100%;
-    position: fixed;
-    z-index: $z-index-4;
-}
+//header {
+//    width: 100%;
+//    position: fixed;
+//    z-index: $z-index-4;
+//}
 
 a {
     text-decoration: none;
@@ -32,16 +32,16 @@ a {
 }
 
 section.page-wrapper {
-    //height: 100vh;
-    position: absolute;
+    height: 100vh;
+    //position: absolute;
 }
 
 .main {
-    padding: 60px 0 0 0;
-    //z-index: $zIndex-1;
-    //position: absolute;
-    //top: 0;
-    //bottom: 0;
+    //padding: 60px 0 0 0;
+    z-index: $z-index-1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     width: 100%;
 }
 

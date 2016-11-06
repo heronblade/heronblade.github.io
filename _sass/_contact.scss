@@ -1,7 +1,10 @@
 @import 'vars';
 
 #contact {
+    display: flex;
+
     button {
+        margin: 0 auto;
         border: none;
         border-radius: 2px;
         display: inline-block;
